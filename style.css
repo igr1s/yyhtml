@@ -1,0 +1,23 @@
+body {
+    padding: 0;
+    margin: 0;
+    overflow: hidden; /* Remove scrollbars */
+}
+
+.mainbody h1 {
+    text-align: center;
+}
+
+#blueside {
+    width: 70%;
+    height: 100vh; /* Set a fixed height */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1000;
+}
+
+#blue:hover {
+    width: 195%;
+}
+
