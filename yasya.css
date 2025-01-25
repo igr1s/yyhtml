@@ -1,0 +1,81 @@
+#bluebox {
+    width: 55%;
+    height: 100vh;
+    /* border: red 2px solid; */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#bluebox:hover~#bluewhite {
+    width: 210%;
+}
+
+#bluebox:hover {
+    width: 80%;
+}
+
+#bluebox:hover #yingyangya {
+    transform: rotate(150deg);
+}
+
+
+
+#bluebox:hover #womanimg {
+    width: 48%;
+    height: 80%;
+
+}
+
+#bluebox:hover~#whitebox {
+    transform: translate(50%);
+}
+
+#bluebox:hover #yasyalogo {
+    visibility: hidden;
+    transform: translate(400%);
+    height: 30%;
+    top: 40%;
+
+}
+
+#bluebox:hover #yasyalogoafter {
+    visibility: visible;
+    width: 20%;
+    height: 50%;
+    opacity: 0.2;
+    transform: translateX(355%);
+    top: 25%;
+}
+
+#womanimg {
+    width: 70%;
+    height: 80%;
+    position: absolute;
+    top: 25%;
+    left: 0%;
+}
+
+#yingyangya {
+    position: absolute;
+    z-index: -1;
+    top: 5%;
+    left: 8%;
+    transition: 1s ease;
+}
+#yasyalogo {
+    transform: translate(5%);
+    position: absolute;
+    z-index: -2;
+    opacity: 0.4;
+    transition: transform 1s ease;
+}
+
+#yasyalogoafter {
+    position: absolute;
+    visibility: hidden;
+    transition: transform 1s ease;
+    z-index: -3;
+    opacity: 0;
+    top: -30%;
+}

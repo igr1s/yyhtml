@@ -1,23 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YASYA / YUKTHI</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="yasya.css">
+    <link rel="stylesheet" href="yukthi.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const whitebox = document.getElementById('whitebox');
+            const bluebox = document.getElementById('bluebox');
+            const robotimg = document.getElementById('robotimg');
+            const womanimg = document.getElementById('womanimg');
+            const yingyangya = document.getElementById('yingyangya');
+            const yasyalogo = document.getElementById('yasyalogo');
+            const yasyalogoafter = document.getElementById('yasyalogoafter');
+            const yingyangyu = document.getElementById('yingyangyu');
+            const yukthilogo = document.getElementById('yukthilogo');
+
+            bluebox.addEventListener('mouseenter', function () {
+                robotimg.style.visibility = 'hidden';
+                yingyangyu.style.visibility = 'hidden';
+                yasyalogo.style.visibility = 'hidden';
+                yukthilogo.style.visibility = 'hidden';
+                yingyangyu.style.opacity = '0';
+            });
+
+            bluebox.addEventListener('mouseleave', function () {
+                robotimg.style.visibility = 'visible';
+                yingyangyu.style.visibility = 'visible';
+                yasyalogo.style.visibility = 'visible';
+                yukthilogo.style.visibility = 'visible';
+                yingyangyu.style.opacity = '1';
+            });
+
+            whitebox.addEventListener('mouseenter', function () {
+                bluebox.style.transform = 'translate(-60%)';
+                womanimg.style.visibility = 'hidden';
+                yasyalogo.style.visibility = 'hidden';
+                yingyangya.style.visibility = 'hidden';
+                yingyangya.style.opacity = '0';
+            });
+
+            whitebox.addEventListener('mouseleave', function () {
+                bluebox.style.transform = '';
+                womanimg.style.visibility = 'visible';
+                yasyalogo.style.visibility = 'visible';
+                yingyangya.style.visibility = 'visible';
+                yingyangya.style.opacity = '1';
+            });
+        });
+    </script>
 </head>
+
 <body>
     <h1>St.Thomas Institute For Science And Technology <br>Presents</h1>
     <div class="mainbody">
-        
+
         <div id="bluebox">
             <img src="assets\woman.png" alt="woman" id="womanimg">
-            <img src="assets\yin yang.png" alt="yingyang" id="yingyang">
+            <img src="assets\yin yang.png" alt="yingyang" id="yingyangya">
             <img src="assets\yasyalogo.png" alt="yasyalogo" id="yasyalogo">
+            <img src="assets/Yasya LOGo.png" alt="yasyalogoafter" id="yasyalogoafter">
         </div>
-        <div id="whitebox"></div>
+        <div id="whitebox">
+            <!-- <img src="assets/robot.png" alt="robot" id="herobotimg"> -->
+            <img src="assets/yukthi-robot.png" alt="robot" id="robotimg">
+            <img src="assets\yinyangg.png" alt="yingyang" id="yingyangyu">
+            <img src="assets\yukthi logo.png" alt="yukthilogo" id="yukthilogo">
+        </div>
         <img src="assets\main image.png" alt="blue" id="bluewhite">
-       
+
     </div>
 </body>
+
 </html>

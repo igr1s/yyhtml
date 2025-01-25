@@ -1,0 +1,60 @@
+#whitebox {
+    width: 45%;
+    height: 100vh;
+    /* border: red 2px solid; */
+    position: absolute;
+    top: 0%;
+    left: 55%;
+}
+
+#whitebox:hover~#womanimg {
+    visibility: hidden;
+}
+
+#whitebox:hover~#bluewhite {
+    transform: translateX(-50%);
+    width: 55%;
+}
+
+#whitebox:hover{
+    width: 80%;
+    transform: translate(-40%);
+}
+#whitebox:hover #yingyangyu {
+    transform: rotate(-150deg);
+}
+
+#whitebox:hover #robotimg {
+    width: 50%;
+    height: 80%;
+    transform: translate(-10%);
+}
+#whitebox:hover #yukthilogo {
+    width: 20%;
+    height: 30%;
+    top: 35%;
+    transform: translate(20%);
+}
+
+#robotimg{
+    width: 90%;
+    height: 80%;
+    position: absolute;
+    top: 25%;
+    right: 0%;
+}
+#yingyangyu {
+    position: absolute;
+    z-index: -1;
+    top: 5%;
+    right: 8%;
+    transition: transform 1s ease;
+}
+
+#yukthilogo{
+    position: absolute;
+    z-index: -2;
+    left: -10%;
+    height: 100%;
+    transition: transform 1s ease;
+}
