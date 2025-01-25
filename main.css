@@ -28,3 +28,24 @@ h1 {
     transition: 1.5s ease;
     /* Add transition for width */
 }
+
+#elementsleft{
+    position: absolute;
+    top: 12%;
+    left: 0;
+    filter: drop-shadow(0 0 0.75rem black);
+}
+
+#elementsmiddle{
+    position: absolute;
+    top: 12%;
+    left: -10%;
+    filter: drop-shadow(0 0 0.75rem black);
+}
+
+#elementsright{
+    position: absolute;
+    top: 12%;
+    right: 0;
+    filter: drop-shadow(0 0 0.75rem black);
+}

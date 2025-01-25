@@ -62,6 +62,7 @@
     top: 5%;
     left: 8%;
     transition: 1s ease;
+    transform: rotate(-20deg);
 }
 #yasyalogo {
     transform: translate(5%);
@@ -78,4 +79,21 @@
     z-index: -3;
     opacity: 0;
     top: -30%;
+}
+
+#yasyatag{
+    font-size: 20px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    text-align: center;
+    visibility: hidden;
+}
+
+#yasyatitleimg{
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    filter: drop-shadow(0 0 0.75rem black);
+    transition: transform 1s ease;
 }
