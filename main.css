@@ -1,15 +1,16 @@
 body {
     padding: 0;
     margin: 0;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
-h1 {
+#firsth1{
     text-align: center;
     font-size: 30px;
-    -webkit-text-stroke: black 0.6px;
-    text-shadow: white 1px 1px 1px;
-    color: transparent;
+    width: 100%;
+    -webkit-text-stroke: black 0.4px; 
+    color: white;
+    transition: all 0.5s ease;
 }
 
 .mainbody {

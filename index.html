@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="yasya.css">
     <link rel="stylesheet" href="yukthi.css">
+    <link rel="stylesheet" href="second.css">
+    <link rel="stylesheet" href="third.css">
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const whitebox = document.getElementById('whitebox');
@@ -26,6 +28,7 @@
             const elementsleft = document.getElementById('elementsleft');
             const elementsmiddle = document.getElementById('elementsmiddle');
             const elementsright = document.getElementById('elementsright');
+            const firsth1 = document.getElementById('firsth1');
 
             bluebox.addEventListener('mouseenter', function () {
                 robotimg.style.visibility = 'hidden';
@@ -39,6 +42,7 @@
                 yukthititleimg.style.visibility = 'hidden';
                 elementsmiddle.style.visibility = 'hidden';
                 elementsright.style.visibility = 'hidden';
+                
             });
 
             bluebox.addEventListener('mouseleave', function () {
@@ -66,6 +70,7 @@
                 elementsmiddle.style.visibility = 'hidden';
                 elementsleft.style.visibility = 'hidden';
                 elementsright.style.transform = 'translate(-230%)';
+                firsth1.style.color = 'black';
             });
 
             whitebox.addEventListener('mouseleave', function () {
@@ -80,15 +85,16 @@
                 elementsmiddle.style.visibility = 'visible';
                 elementsleft.style.visibility = 'visible';
                 elementsright.style.transform = 'translate(0%)';
+                firsth1.style.color = 'white';
             });
         });
     </script>
 </head>
 
 <body>
-    <h1>St.Thomas Institute For Science And Technology <br>Presents</h1>
+    
     <div class="mainbody">
-
+        <h1 id="firsth1">St.Thomas Institute For Science And Technology <br>Presents</h1>
         <div id="bluebox">
             <img src="assets\elements.png" alt="elements" id="elementsleft">
             <img src="assets\woman.png" alt="woman" id="womanimg">
@@ -111,6 +117,13 @@
         </div>
         <img src="assets\main image.png" alt="blue" id="bluewhite">
 
+    </div>
+    <div id="secondpage">
+        <h1 id="sponserh1">OUR SPONSERS</h1>
+        
+    </div>
+    <div id="thirdpage">
+        <h1 id="teamh1">OUR TEAM</h1>
     </div>
 </body>
 
