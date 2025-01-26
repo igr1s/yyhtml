@@ -1,4 +1,4 @@
-#thirdpage{
+#thirdpage {
     position: absolute;
     z-index: -1;
     top: 200%;
@@ -7,9 +7,10 @@
     background-image: url('assets/main image.png');
     background-repeat: none;
     background-size: cover;
+    visibility: hidden;
 }
 
-#teamh1{
+#teamh1 {
     text-align: center;
     width: 95%;
     font-size: 250px;
